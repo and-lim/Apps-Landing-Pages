@@ -397,10 +397,21 @@ a.navbar-brand h1:hover{
 } 
 
 
-.card.item-card{
+.test-card.item-card{
     padding: 10px ;
     height: 100%;
 }
+
+.test-card{
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+
 
 .border-orange{
     border-top: 5px solid #ff7a06;
