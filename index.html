@@ -71,7 +71,8 @@
                 <div class="container py-5 mt-5">
                     <div class="row g-5 align-items-center">
                         <div class="col-lg-6 text-center text-lg-start">
-                            <h1 class="text-white mb-4 animated slideInDown">Awesome Software To Manage Your Business</h1>
+                            <h1 class="text-white mb-4 text-slider-items">Awesome Software To Manage Your Business</h1>
+                            <h1 class="text-white mb-4 text-slider"></h1>
                             <p class="text-white animated slideInDown">Tempor rebum no at dolore lorem clita rebum rebum ipsum rebum stet dolor sed justo kasd dolor sed magna dolor.</p>
                             <div class="position-relative w-100 mt-3">
                                 <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Your Email" style="height: 58px;">
@@ -167,7 +168,7 @@
             </div>
         </section>
         <div class="position-absolute">
-            <img src="img/blob.svg" style="opacity: 0.1; margin-left:-30%; z-index: -1;" alt="">  
+            <img src="img/blob.svg" class="img-animasi" style="opacity: 0.1; margin-left:-30%; z-index: -1;" alt="">  
         </div>
         <!-- Feature End -->
 
@@ -270,7 +271,7 @@
                 </div>
             </div>
             <div class="position-absolute">
-                <img src="img/blob-2.svg" style="opacity: 0.1; margin-left: 70px; z-index: -1;" alt="">  
+                <img src="img/blob-2.svg" class="img-animasi" style="opacity: 0.1; margin-left: 70px; z-index: -1;" alt="">  
             </div>
         </section>
 
@@ -332,7 +333,7 @@
         
         <section>
             <div class="position-absolute">
-                <img src="img/blob-2.svg" style="opacity: 0.1; margin-right: -120px; z-index: -1;" alt="">  
+                <img class="img-animasi" src="img/blob-2.svg" style="opacity: 0.1; margin-right: -120px; z-index: -1;" alt="">  
             </div>
             <div class="container">
                 <div class="row">
@@ -806,7 +807,10 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.js"></script>
     <script src="https://kit.fontawesome.com/6d5647a785.js" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+	
+    <!-- Add jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script>
@@ -871,6 +875,25 @@
 
     </script>
 
+
+
+<!-- Add this script for successful
+    implementation of typed.js -->
+<script>
+    if ($(".text-slider").length == 1) {
+        
+        var typed_strings =
+            $(".text-slider-items").text();
+
+        var typed = new Typed(".text-slider", {
+            strings: typed_strings.split(", "),
+            typeSpeed: 50,
+            loop: true,
+            backDelay: 900,
+            backSpeed: 30,
+        });
+    }
+</script>
 
 
 </body>

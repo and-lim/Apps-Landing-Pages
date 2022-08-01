@@ -640,3 +640,22 @@ a.navbar-brand h1:hover{
       transform: translateY(-20px);
     }
   }
+
+.img-animasi{
+    animation: sidedown 10s linear infinite;
+  }
+  @keyframes sidedown{
+    0%{
+      transform: translateX(-10rem);
+    }
+    50%{
+      transform: translateX(10rem);
+    }
+    100%{
+      transform: translateX(-10rem);
+    }
+  }
+
+.text-slider-items{
+    display: none;
+}
