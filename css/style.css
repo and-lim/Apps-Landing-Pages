@@ -677,6 +677,7 @@ a.navbar-brand h1:hover{
 
 .footer .copyright a {
     color: var(--light);
+    text-decoration: none;
 }
 
 .footer .footer-menu a {
