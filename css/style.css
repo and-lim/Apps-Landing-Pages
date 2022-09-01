@@ -83,6 +83,10 @@ h6,
     font-weight: 500 !important;
 }
 
+.intro-title{
+    font-size: 3rem !important;
+}
+
 
 /*** Button ***/
 .btn {
@@ -357,6 +361,7 @@ a.navbar-brand h1:hover{
 	transform: translate(-50%, -25px);
 	display: inline-block;
 	height: 36px;
+    margin-top: 5rem;
   }
   @media print, screen and (min-width: 64em) {
 	.mouse-icon {
@@ -366,6 +371,13 @@ a.navbar-brand h1:hover{
 	  transform: translate(-50%, -40px);
 	}
   }
+
+  @media (max-width:576px) {
+    .mouse-icon{
+        margin-top: 3rem
+    }
+    
+}
   .mouse-icon svg {
 	height: 100%;
 	width: auto;
