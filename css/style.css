@@ -497,6 +497,13 @@ a.navbar-brand h1:hover{
     border-radius: 0.25rem;
 }
 
+.backup-section{
+    background-color: #fff;
+    border: 10px solid #d2d9ff;
+    border-left: none;
+    padding-top: 7rem;
+    border-radius: 0 120px 120px 0;
+}
 
 .border-orange{
     border-top: 5px solid #ff7a06;
@@ -509,6 +516,14 @@ a.navbar-brand h1:hover{
 }
 .border-black{
     border-top: 5px solid #000000;
+}
+
+.phone-section{
+    background-color: #fff;
+    border: 10px solid #d2d9ff;
+    border-left: none;
+    padding-top: 7rem;
+    border-radius: 120px 0 0 120px;
 }
 
 /*** Process ***/
