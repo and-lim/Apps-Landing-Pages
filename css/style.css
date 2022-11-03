@@ -160,6 +160,12 @@ h6,
     transition: .5s;
 }
 
+.navbar.navbar-apps{
+    max-width: 80rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem !important;
+}
+
 a.navbar-brand h1:hover{
     color: #edb657 !important;
 }
@@ -198,7 +204,11 @@ a.navbar-brand h1:hover{
     .sticky-top.navbar .navbar-brand h1 {
         color: var(--primary) !important;
     }
-
+    .navbar.navbar-apps{
+        width: 100% !important;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 .navbar .navbar-brand img {
