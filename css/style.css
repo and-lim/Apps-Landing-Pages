@@ -4,10 +4,15 @@
     --light: #EDF5FF;
     --dark: #202942;
 }
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('https://fonts.googleapis.com/css?family=Montserrat');
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 *{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat' sans-serif ;
     font-weight: 500 ; 
 }
 
