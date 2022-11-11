@@ -703,9 +703,23 @@ form.contact{
     background-attachment: fixed;
 }
 
+@media (max-width:576px) {
+    .company-contact{
+        position: relative;
+        left: -20%;
+        top:10%
+    }
+}
+
 /*** Footer ***/
 .footer {
     padding-top: 3rem;
+}
+
+@media (max-width:576px) {
+    .footer, a.btn-link {
+        text-align: center !important;
+    }
 }
 
 .footer .btn.btn-social {
